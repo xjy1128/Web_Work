@@ -1,0 +1,271 @@
+drop table if exists poem_admin;
+
+create table poem_admin(
+	ADMIN_ID varchar(20) not null,
+	ADMIN_PASSWORD varchar(20) not null,
+	ADMIN_EMAIL varchar(32) default null,
+	ADMIN_CODE varchar(6) default null,
+	ADMIN_AVATAR varchar(128) default null,
+	ADMIN_ENTEND varchar(32) default null,
+	ADMIN_STATUS varchar(1)  not null,
+	primary key(ADMIN_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+INSERT INTO poem_admin values('张华','123456','819476232@qq.com','111111', '' , ' ', 1 );
+INSERT INTO poem_admin values('黄露','hl9158186,'984462352@qq.com','324810', '' , ' ', 1 );
+INSERT INTO poem_admin values('林嘉','lj7762548,'2377490831@qq.com','234622', '' , ' ', 1 );
+INSERT INTO poem_admin values('李明','520304lm','758792917@qq.com','000350', '' , ' ', 1 );
+INSERT INTO poem_admin values('张迟','330609zc','669659657@qq.com','864113', '' , ' ', 1 );
+INSERT INTO poem_admin values('王鹏泽','WPZ990627','wpz0627lucky@126.com','725802', '' , ' ', 1 );
+INSERT INTO poem_admin values('林芳','lf696969','','552328', '' , ' ', 1 );
+INSERT INTO poem_admin values('林熙','lx2564078','','694158', '' , ' ', 1 );
+INSERT INTO poem_admin values('黄佳瑞','hjr256602','','', '' , ' ', 1 );
+INSERT INTO poem_admin values('张瑞','000608ZR','228500847@qq.com','', '' , ' ', 1 );
+INSERT INTO poem_admin values('楚城','ch6071913','1016862549@qq.com','', '' , ' ', 1 );
+INSERT INTO poem_admin values('张晓伟','zxw756606','','', '' , ' ', 0 );
+INSERT INTO poem_admin values('林倩','8956103lq','805676956@qq.com','625562', '' , ' ', 0 );
+INSERT INTO poem_admin values('邱野','qy13758725802','209524057@qq.com','680471', '' , ' ', 0 );
+INSERT INTO poem_admin values('李婷','lt25352635','','943588', '' , ' ', 0 );
+INSERT INTO poem_admin values('陈慧','ch8936287','196254926@163.com','', '' , ' ', 0 );
+
+
+
+drop table if exists poem_idiom;
+
+create table poem_idiom(
+	IDIOM_ID int(5) not null AUTO_INCREMENT,
+	IDIOM_NAME varchar(20) not null,
+	IDIOM_SOURCE varchar(20) default null,
+	IDIOM_EXAMPLE varchar(50) not null,
+	IDIOM_ALPH varchar(20) not null,
+	IDIOM_MEAN text not null,
+	primary key(IDIOM_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+INSERT INTO poem_idiom values('1','鼠目寸光','《临川梦·隐奸》','我们从小就应树立远大理想，努力学习科学知识，决不做鼠目寸光的庸人。','shǔ mù cùn guāng','意为老鼠的眼睛只能看到一米远。形容目光短浅，没有远见。');
+INSERT INTO poem_idiom values('2','不舞之鹤','《世说新语·排调》','方宰淄时，松裁弱冠，过蒙器许，而驽钝不才，竟以不舞之鹤为羊公辱。','bù wǔ zhī hè','比喻名不副实的人。也用来讥讽人无能。');
+INSERT INTO poem_idiom values('3','百折不回','《太尉乔玄碑》','耿耿自始，百折不回。','bǎi zhé bù huí','比喻意志坚强，无论受到多少次挫折，毫不动摇退缩。');
+INSERT INTO poem_idiom values('4','麟角凤觜','《海内十洲记》','麟角凤觜世莫识，煎胶续弦奇自见。','lín jiǎo fèng zuǐ','比喻稀罕名贵的东西。');
+INSERT INTO poem_idiom values('5','汗马之功','《唐语林·补遗一》','倘效玄宗幸金牛之道，岂无诸将立汗马之功。','hàn mǎ zhī gōng','指战争中立下的功绩。');
+INSERT INTO poem_idiom values('6','乐极悲生','《史记·滑稽列传》','可正是乐极悲生，今日个泰来否往。','lè jí bēi shēng','高兴到极点时，发生使人悲伤的事。');
+INSERT INTO poem_idiom values('7','巧舌如簧','《诗经·小雅·巧言》','这个商人巧舌如簧，把次品说成是优等品，欺骗消费者。','qiǎo shé rú huáng','舌头灵巧，象簧片一样能发出动听的乐音。形容花言巧语，能说会道。');
+INSERT INTO poem_idiom values('8','贻笑大方','《庄子·秋水》','去岁路过贵邦，就要登堂求教；但愧知识短浅，诚恐贻笑大方，所以不敢冒昧进谒。','yí xiào dà fāng','原指懂得大道的人，后泛指见识广博或有专长的人。指让内行人笑话。');
+INSERT INTO poem_idiom values('9','怡然自得','《列子·黄帝》','刘厚守听了，怡然自得，坐在椅子上，尽兴地把身子乱摆，一声也不响。','yí rán zì dé','形容高兴而满足的样子。');
+INSERT INTO poem_idiom values('10','流金铄石','《淮南子·铨言训》','季月烦暑，流金铄石，聚蚊成雪，封狐千里。','liú jīn shuò shí','形容天气酷热，好象金石都要熔化。');
+INSERT INTO poem_idiom values('11','风雨飘摇','《诗经·豳风·鸱号》','我现在离家已十二三年，值此新秋，又是风雨飘摇的深夜，天涯羁客不胜落寞的情怀。','fēng yǔ piāo yáo','在风雨中飘荡不定。比喻局势动荡不安，很不稳定。');
+INSERT INTO poem_idiom values('12','回光反照','《刘行首》','阳台雾锁，楚岫云遮，弃死归生，回光返照。','huí guāng fǎn zhào','指日落时由于反射作用而天空中短时发亮。比喻人死前精神突然兴奋。也比喻事物灭亡前夕的短暂兴旺。');
+INSERT INTO poem_idiom values('13','俟河之清','《左传·襄公八年》','真所谓“俟河之清”呢！','sì hé zhī qīng','等待黄河变清。比喻期望的事情不能实现。');
+INSERT INTO poem_idiom values('14','宾至如归','《左传·襄公三十一年》','列车服务员招待热情，服务周到，旅客都有宾至如归的感觉。','bīn zhì rú guī','宾：客人；至：到；归：回到家中。客人到这里就象回到自己家里一样。形容招待客人热情周到。');
+INSERT INTO poem_idiom values('15','鸟语花香','《镜花缘》','春天一到，公园里鸟语花香，充满了生机。','niǎo yǔ huā xiāng','鸟叫得好听，花开得喷香。形容春天的美好景象。');
+INSERT INTO poem_idiom values('16','穷乡僻壤','《北京赋》','穷乡僻壤，有这样读书君子，却被守钱奴如此凌虐，足令人怒发冲冠。','qióng xiāng pì rǎng','壤：地。荒远偏僻的地方。');
+INSERT INTO poem_idiom values('17','从善如流','《左传·成公八年》','“八毛！”他也立刻懂得，将五分钱让去，真是“从善如流”，有正人君子的风度。','cóng shàn rú liú','从：听从；善：好的，正确的；如流：好象流水向下，形容迅速。形容能迅速地接受别人的好意见。');
+INSERT INTO poem_idiom values('18','从谏如流','《王命论》','也有少数聪明点的，为了坐稳江山，笼络人心，也能从谏如流。','cóng jiàn rú liú','谏：直言规劝。听从规劝像流水一样自然。形容乐于接受别人的批评意见。');
+INSERT INTO poem_idiom values('19','艰苦卓绝','《宋史·邵雍传》','用儒家之道德，故艰苦卓厉者绝无，而冒没奔竞者皆是。','jiān kǔ zhuó jué','坚忍刻苦的精神超过寻常。');
+INSERT INTO poem_idiom values('20','涕泗横流','《世说新语·言语》','抚剑悲歌，临书浩叹，每感岁时之易失，不知涕泗之横流。','tì sì héng liú','眼泪鼻涕满脸乱淌。形容极度悲伤。');
+INSERT INTO poem_idiom values('21','一丘一壑','《汉书·叙传上》','兄以一丘一壑过之，且筑圹于侧，与山缔生死盟。','yī qiū yī hè','丘：土山；壑：山沟。原指隐者所居之地。后多用以指寄情山水。');
+INSERT INTO poem_idiom values('22','舌挢不下','《史记·扁鹊苍公列传》','次日长闻报，仰面视天，舌挢不能下。','	shé jiǎo bù xià','挢：翘起。翘起舌头，久久不能放下。形容惊讶或害怕时的神态。');
+INSERT INTO poem_idiom values('23','如泣如诉','《前赤壁赋》','风声如泣如诉，墓地凄然悲凉。','rú qì rú sù','好象在哭泣，又象在诉说。形容声音悲切。');
+INSERT INTO poem_idiom values('24','荡气回肠','《高唐赋》','这首乐曲旋律优美动人，令人荡气回肠。','dàng qì huí cháng','荡：动摇；回：回转。形容文章、乐曲十分婉转动人。');
+INSERT INTO poem_idiom values('25','无动于衷','《官场现形记》','面对集体财产遭到大火的威胁，我们怎么能无动于衷呢？','wú dòng yú zhōng','衷：内心。心里一点儿也没有触动。指对应该关心、注意的事情毫不关心，置之不理。');
+INSERT INTO poem_idiom values('26','麻木不仁','《医案·总论》','没有同情，没有热，是麻木不仁？还是忘恩负义。','má mù bù rén','不仁：没有感觉。肢体麻痹，失去知觉。比喻对外界事物反应迟钝或漠不关心。');
+INSERT INTO poem_idiom values('27','以貌取人','《史记·仲尼弟子列传》','真是糟糕，他早又不说，但也只怪我们以貌取人，在事前没有经过一道甄别了。','yǐ mào qǔ rén','根据外貌来判别一个的的品质才能。');
+INSERT INTO poem_idiom values('28','量才录用','《礼记·王制》','凡愿继续服务者，在人民政府接管后，准予量才录用。','liàng cái lù yòng','根据才能大小分配一定工作。');
+INSERT INTO poem_idiom values('29','暴躁如雷','《古诗为焦仲卿妻作》','严贡生越发恼得暴躁如雷。','bào zào rú léi','暴：暴烈，急躁。急怒叫跳，象打雷一样猛烈。形容又急又怒，大发脾气的样子。');
+INSERT INTO poem_idiom values('30','火上浇油','《金线池》','这么一来，大家的情绪就象火上浇油似的。','huǒ shàng jiāo yóu','往火上倒油。比喻使人更加愤怒或使情况更加严重。');
+INSERT INTO poem_idiom values('31','如虎添翼','《心书·兵机》','因为匪徒们深知，这两件东西一掌握在姜青山手里，就如虎添翼，再多的人也奈何不了他。','rú hǔ tiān yì','好象老虎长上了翅膀。比喻强有力的人得到帮助变得更加强有力。');
+INSERT INTO poem_idiom values('32','锦上添花','《了了庵颂》','命穷时镇日价河头卖水，运来时一朝的锦上添花。','jǐn shàng tiān huā','在锦上再绣花。比喻好上加好，美上添美。');
+INSERT INTO poem_idiom values('33','雪上加霜','《景德传灯录》','正在惊慌，偏又转了迎面大风，真是雪上加霜。','xuě shàng jiā shuāng','比喻接连遭受灾难，损害愈加严重。');
+INSERT INTO poem_idiom values('34','狼狈不堪','《三国志·蜀志·马超传》','掌声如翻腾的怒海汹涌的扑向台上去，弄得这些丑类面红耳赤，狼狈不堪。','láng bèi bù kān','困顿、窘迫得不能忍受。形容非常窘迫的样子。');
+INSERT INTO poem_idiom values('35','从容不迫','《旧唐书·刘世龙传》','这些人从容不迫地叩了头，花费了半点钟以上的时间。','cóng róng bù pò','从容：不慌不忙，很镇静；不迫：不急促。不慌不忙，沉着镇定。');
+INSERT INTO poem_idiom values('36','浓妆艳抹','《水浒传》','她穿得比以前漂亮，而且是浓妆艳抹，还戴了一副长耳坠。','nóng zhuāng yàn mǒ','形容妇女妆饰打扮得十分艳丽。');
+INSERT INTO poem_idiom values('37','青鞋布袜','《奉先刘少府新画山水障歌》','某则不然，青鞋布袜，即日行矣。','qīng xié bù wà','原指平民的服装。旧时比喻隐士的生活。');
+INSERT INTO poem_idiom values('38','荆钗布裙','《太平御览》卷七百十八引《列女传》','况荆钗布裙者未必能安于荆钗布裙也，与其后悔，莫若无成。','jīng chāi bù qún','荆枝作钗，粗布为裙。形容妇女装束朴素。');
+INSERT INTO poem_idiom values('39','锦衣玉食','《魏书·常景传》','况荆钗布裙者未必能安于荆钗布裙也，与其后悔，莫若无成。','jǐn yī yù shí','精美的衣食。形容豪华奢侈的生活。');
+INSERT INTO poem_idiom values('40','娇生惯养','《红楼梦》','她从小娇生惯养，什么事也不会干。','jiāo shēng guàn yǎng','从小就被溺爱、娇养惯了。');
+
+drop table if exists poem_poetry;
+
+create table poem_poetry(
+	POEM_ID int(10) not null AUTO_INCREMENT,
+	POEM_NAME varchar(20) not null,
+	POEM_AUTHOR varchar(10) not null,
+	POEM_DYNASTY varchar(10) not null,
+	POEM_TYPE varchar(10) not null,
+	POEM_STYLE varchar(10) not null,
+	POEM_CONTENT TEXT not null,
+	POEM_TRANSLATE TEXT not null,
+	primary key(POEM_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+INSERT INTO poem_poetry values( '','春晓','孟浩然','唐','绝句','田园诗','<p>春眠不觉晓，处处闻啼鸟。</p><p>夜来风雨声，花落知多少。</p>','春日里贪睡不知不觉天已破晓，搅乱我酣眠的是那啁啾的小鸟。昨天夜里风声雨声一直不断，那娇美的春花不知被吹落了多少？');
+INSERT INTO poem_poetry values( '','山居秋暝','王维','唐','绝句','田园诗','<p>空山新雨后，天气晚来秋。</p><p>明月松间照，清泉石上流。</p><p>竹喧归浣女，莲动下渔舟。</p><p>随意春芳歇，王孙自可留。 </p>','新雨过后山谷里空旷清新，初秋傍晚的天气特别凉爽。明月映照着幽静的松林间，清澈泉水在山石上淙淙淌流。竹林中少女喧笑洗衣归来，莲叶轻摇是上游荡下轻舟。任凭春天的美景消歇，眼前的秋景足以令人流连。');
+INSERT INTO poem_poetry values( '','游山西村','陆游','宋','绝句','田园诗','<p>莫笑农家腊酒浑，丰年留客足鸡豚。</p><p>山重水复疑无路，柳暗花明又一村。</p><p>箫鼓追随春社近，衣冠简朴古风存。</p><p>从今若许闲乘月，拄杖无时夜叩门。</p>','不要笑农家腊月里酿的酒浑浊不醇厚，丰收的年景农家待客菜肴非常丰盛。山峦重叠水流曲折正担心无路可走，忽然柳绿花艳间又出现一个山村。吹着箫打起鼓春社的日子已经接近，布衣素冠，淳朴的古代风俗依旧保留。今后如果还能乘大好月色出外闲游，我一定拄着拐杖随时来敲你的家门。');
+INSERT INTO poem_poetry values( '','终南别业','王维','唐','绝句','田园诗','<p>中岁颇好道，晚家南山陲。</p><p>兴来每独往，胜事空自知。</p><p>行到水穷处，坐看云起时。</p><p>偶然值林叟，谈笑无还期。</p>','中年以后存有较浓的好道之心，直到晚年才安家于终南山边陲。兴趣浓时常常独来独往去游玩，有快乐的事自我欣赏自我陶醉。间或走到水的尽头去寻求源流，间或坐看上升的云雾千变万化。偶然在林间遇见个把乡村父老，偶与他谈笑聊天每每忘了还家。');
+INSERT INTO poem_poetry values( '','浣溪沙·渔父','苏轼','宋','词','田园诗','<p>西塞山边白鹭飞，散花洲外片帆微。桃花流水鳜鱼肥。</p><p>自庇一身青箬笠，相随到处绿蓑衣。斜风细雨不须归。 </p>','西塞山江边白鹭在飞翔，散花洲外江上片片白帆船在轻轻地飘动。桃花水汛期鳜鱼长得肥胖。自有遮护全身的青竹壳斗笠，与斗笠相伴的还有绿蓑衣。斜风夹杂着细雨，过着乐而忘归的渔翁生活。');
+INSERT INTO poem_poetry values( '','雁门太守行','李贺','唐','绝句','边塞诗','<p>黑云压城城欲摧，甲光向日金鳞开。</p><p>角声满天秋色里，塞上燕脂凝夜紫。</p><p>半卷红旗临易水，霜重鼓寒声不起。</p><p>报君黄金台上意，提携玉龙为君死。  </p>','敌兵滚滚而来，犹如黑云翻卷，想要摧倒城墙；战士们的铠甲在阳光照射下金光闪烁。号角声响彻秋夜的长空，边塞上将士的血迹在寒夜中凝为紫色。红旗半卷，援军赶赴易水；夜寒霜重，鼓声郁闷低沉。为了报答国君的赏赐和厚爱，手操宝剑甘愿为国血战到死。');
+INSERT INTO poem_poetry values( '','渔家傲·秋思','范仲淹','宋','词','边塞诗','<p>塞下秋来风景异，衡阳雁去无留意。四面边声连角起，千嶂里，长烟落日孤城闭。</p><p>浊酒一杯家万里，燕然未勒归无计。羌管悠悠霜满地，人不寐，将军白发征夫泪。</p>','秋天到了，西北边塞的风光和江南大不同。大雁又飞回了衡阳，一点也没有停留之意。黄昏时分，号角吹起，边塞特有的风声、马啸声、羌笛声和着号角声从四面八方回响起来。连绵起伏的群山里，夕阳西下，青烟升腾，孤零零的一座城城门紧闭。饮一杯浊酒，不由得想起万里之外的亲人，眼下战事未平，功名未立，还不能早作归计。远方传来羌笛的悠悠之声，天气寒冷，霜雪满地。夜深了，在外征战的人都难以入睡，将军已是头发花白，士兵抹着思乡的泪水');
+INSERT INTO poem_poetry values( '','走马川行奉送封大夫出师西征','岑参','唐','绝句','边塞诗','<p>君不见走马川行雪海边，平沙莽莽黄入天。</p><p>轮台九月风夜吼，一川碎石大如斗，随风满地石乱走。</p><p>匈奴草黄马正肥，金山西见烟尘飞，汉家大将西出师。</p><p>将军金甲夜不脱，半夜军行戈相拨，风头如刀面如割。</p><p>马毛带雪汗气蒸，五花连钱旋作冰，幕中草檄砚水凝。</p><p>虏骑闻之应胆慑，料知短兵不敢接，车师西门伫献捷。</p>','您难道不曾看见吗？那辽阔的走马川紧靠着雪海边缘，茫茫无边的黄沙连接云天。轮台九月整夜里狂风怒号，到处的碎石块块大如斗，狂风吹得斗大乱石满地走。这时匈奴牧草繁茂军马肥，侵入金山西面烟尘滚滚飞，汉家的大将率兵开始征西。将军身著铠甲夜里也不脱，半夜行军戈矛彼此相碰撞，凛冽寒风吹到脸上如刀割。马毛挂着雪花还汗气蒸腾，五花马的身上转眼结成冰，营幕中写檄文砚墨也冻凝。敌军听到大军出征应胆惊，料他不敢与我们短兵相接，我就在车师西门等待报捷。');
+INSERT INTO poem_poetry values( '','从军行','杨炯','唐','绝句','边塞诗','<p>烽火照西京，心中自不平。</p><p>牙璋辞凤阙，铁骑绕龙城。</p><p>雪暗凋旗画，风多杂鼓声。</p><p>宁为百夫长，胜作一书生。</p>','边塞的报警烽火传到了长安，壮士的心怀哪能够平静。辞别皇宫，将军手执兵符而去；围敌攻城，精锐骑兵勇猛异常。大雪纷飞，军旗黯然失色；狂风怒吼，夹杂咚咚战鼓。我宁愿做个低级军官为国冲锋陷阵，也胜过当个白面书生只会雕句寻章。');
+INSERT INTO poem_poetry values( '','出塞','王昌龄','唐','绝句','边塞诗','<p>秦时明月汉时关，万里长征人未还。</p><p>但使龙城飞将在，不教胡马度阴山。</p>','依旧是秦汉时期的明月和边关，守边御敌鏖战万里征夫未回还。倘若龙城的飞将李广如今还在，一定不会让敌人的铁蹄踏过阴山。');
+INSERT INTO poem_poetry values( '','登高','王维','唐','绝句','抒情诗','<p>风急天高猿啸哀，渚清沙白鸟飞回。</p><p>无边落木萧萧下，不尽长江滚滚来。</p><p>万里悲秋常作客，百年多病独登台。</p><p>艰难苦恨繁霜鬓，潦倒新停浊酒杯。</p>','风急天高猿猴啼叫显得十分悲哀，水清沙白的河洲上有鸟儿在盘旋。无边无际的树木萧萧地飘下落叶，望不到头的长江水滚滚奔腾而来。悲对秋景感慨万里漂泊常年为客，一生当中疾病缠身今日独上高台。历尽了艰难苦恨白发长满了双鬓，衰颓满心偏又暂停了浇愁的酒杯。');
+INSERT INTO poem_poetry values( '','野望','王继','唐','绝句','抒情诗','<p>东皋薄暮望，徙倚欲何依。</p><p>树树皆秋色，山山唯落晖。</p><p>牧人驱犊返，猎马带禽归。</p><p>相顾无相识，长歌怀采薇。</p>','黄昏的时候伫立在东皋村头怅望，徘徊不定不知该归依何方。每棵树都染上秋天的色彩，重重山岭都披覆着落日的余光。放牧的人驱赶着牛群回家，猎人骑着马带着猎物各自随愿而归。大家相对无言彼此互不相识，我长啸高歌真想隐居在山冈！ ');
+INSERT INTO poem_poetry values( '','破阵子·为陈同甫赋壮词以寄之','辛弃疾','宋','词','抒情诗','<p>醉里挑灯看剑，梦回吹角连营。八百里分麾下炙，五十弦翻塞外声，沙场秋点兵。</p><p>马作的卢飞快，弓如霹雳弦惊。了却君王天下事，赢得生前身后名。可怜白发生！</p>','醉梦里挑亮油灯观看宝剑，恍惚间又回到了当年，各个军营里接连不断地响起号角声。把酒食分给部下享用，让乐器奏起雄壮的军乐鼓舞士气。这是秋天在战场上阅兵。战马像的卢马一样跑得飞快，弓箭像惊雷一样震耳离弦。我一心想替君主完成收复国家失地的大业，取得世代相传的美名。一梦醒来，可惜已是白发人！');
+INSERT INTO poem_poetry values( '','滁州西涧','韦应物','唐','绝句','抒情诗','<p>独怜幽草涧边生，上有黄鹂深树鸣。</p><p>春潮带雨晚来急，野渡无人舟自横。</p>','最是喜爱涧边幽谷里生长的野草，还有那树丛深处婉转啼鸣的黄鹂。傍晚时分，春潮上涨，春雨淅沥，西涧水势顿见湍急，荒野渡口无人，只有一只小船悠闲地横在水面。');
+INSERT INTO poem_poetry values( '','赤壁','杜牧','唐','绝句','抒情诗','<p>折戟沉沙铁未销，自将磨洗认前朝。</p><p>东风不与周郎便，铜雀春深锁二乔。 </p>','赤壁的泥沙中，埋着一枚未锈尽的断戟。自己磨洗后发现这是当年赤壁之战的遗留之物。倘若不是东风给周瑜以方便，结局恐怕是曹操取胜，二乔被关进铜雀台了。');
+INSERT INTO poem_poetry values( '','黄鹤楼','崔颢','唐','绝句','思乡诗','<p>昔人已乘黄鹤去，此地空余黄鹤楼。</p><p>黄鹤一去不复返，白云千载空悠悠。</p><p>晴川历历汉阳树，芳草萋萋鹦鹉洲。</p><p>日暮乡关何处是？烟波江上使人愁。 </p>','过去的仙人已经驾着黄鹤飞走了，只留下空荡荡的黄鹤楼。黄鹤一去再也没有回来，千百年来只看见白云悠悠。阳光照耀下的汉阳树木清晰可见，更能看清芳草繁茂的鹦鹉洲。暮色渐渐漫起，哪里是我的家乡？江面烟波渺渺让人更生烦愁。');
+INSERT INTO poem_poetry values( '','逢入京使','岑参','唐','绝句','思乡诗','<p>故园东望路漫漫，双袖龙钟泪不干。</p><p>马上相逢无纸笔，凭君传语报平安。</p>','向东遥望长安家园路途遥远，思乡之泪沾湿双袖难擦干。在马上匆匆相逢没有纸和笔，只有托你捎个口信，给家人报平安。');
+INSERT INTO poem_poetry values( '','回乡偶书','贺知章','唐','绝句','思乡诗','<p>少小离家老大回，乡音无改鬓毛衰。</p><p>儿童相见不相识，笑问客从何处来。 </p>','年少时离乡老年才归家，我的乡音虽未改变，但鬓角的毛发却已经疏落。家乡的儿童们看见我，没有一个认识我。他们笑着询问我：你是从哪里来的呀？ ');
+INSERT INTO poem_poetry values( '','枫桥夜泊','张继','唐','绝句','思乡诗','<p>月落乌啼霜满天，江枫渔火对愁眠。</p><p>姑苏城外寒山寺，夜半钟声到客船。</p>','月亮已落下乌鸦啼叫寒气满天，江边枫树与船上渔火，难抵我独自傍愁而眠。姑苏城外那寒山古寺，半夜里敲响的钟声传到了我乘坐的客船。');
+INSERT INTO poem_poetry values( '','次北固山下','王湾','唐','绝句','思乡诗','<p>客路青山外，行舟绿水前。</p><p>潮平两岸阔，风正一帆悬。</p><p>海日生残夜，江春入旧年。</p><p>乡书何处达？归雁洛阳边。</p>','郁郁葱葱的山外是旅客的道路，船行在绿水之间。潮水涨满，两岸之间水面宽阔，顺风行船恰好把帆儿高悬。夜幕还没有褪尽，旭日已在江上冉冉升起，还在旧年时分，江南已有了春天的气息。我的家书应该送到什么地方呢？北去的归雁啊，请给我捎回洛阳那边！');
+INSERT INTO poem_poetry values( '','满江红','岳飞','宋','词','爱国诗','<p>怒发冲冠，凭栏处、潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲，白了少年头，空悲切！</p><p>靖康耻，犹未雪。臣子恨，何时灭！驾长车，踏破贺兰山缺。壮志饥餐胡虏肉，笑谈渴饮匈奴血。待从头、收拾旧山河，朝天阙。</p>','我愤怒得头发竖了起来，帽子被顶飞了。独自登高凭栏远眺，骤急的风雨刚刚停歇。抬头远望天空，禁不住仰天长啸，一片报国之心充满心怀。三十多年来虽已建立一些功名，但如同尘土微不足道，南北转战八千里，经过多少风云人生。好男儿，要抓紧时间为国建功立业，不要空空将青春消磨，等年老时徒自悲切。靖康之变的耻辱，至今仍然没有被雪洗。作为国家臣子的愤恨，何时才能泯灭！我要驾着战车向贺兰山进攻，连贺兰山也要踏为平地。我满怀壮志，打仗饿了就吃敌人的肉，谈笑渴了就喝敌人的鲜血。待我重新收复旧日山河，再带着捷报向国家报告胜利的消息！ ');
+INSERT INTO poem_poetry values( '','书愤','陆游','宋','绝句','爱国诗','<p>早岁那知世事艰，中原北望气如山。</p><p>楼船夜雪瓜洲渡，铁马秋风大散关。</p><p>塞上长城空自许，镜中衰鬓已先斑。</p><p>出师一表真名世，千载谁堪伯仲间！ </p>','年轻时哪里知道世事如此艰难，北望中原，收复故土的豪迈气概坚定如山。记得在瓜州渡痛击金兵，雪夜里飞奔着楼船战舰。秋风中跨战马纵横驰骋，收复了大散关捷报频传。自己当年曾以万里长城来自我期许，到如今垂垂老鬓发如霜，盼北伐盼恢复都成空谈。出师表真可谓名不虚传，有谁像诸葛亮鞠躬尽瘁，率三军复汉室北定中原！');
+INSERT INTO poem_poetry values( '','南乡子·登京口北固亭有怀','辛弃疾','宋','词','爱国诗','<p>何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。不尽长江滚滚流。</p><p>年少万兜鍪，坐断东南战未休。天下英雄谁敌手？曹刘。生子当如孙仲谋。</p>','从哪里可以眺望故土中原？眼前却只见北固楼一带的壮丽江山，千百年的盛衰兴亡，不知经历了多少变幻？说不清呀。往事连绵不断，如同没有尽头的长江水滚滚地奔流不息。
+想当年孙权在青年时代，已统领着千军万马。坐镇东南，连年征战，没有向敌人低过头。天下英雄谁是孙权的敌手呢？只有曹操和刘备可以和他鼎足成三。难怪曹操说：“生下的儿子就应当如孙权一般！”');
+INSERT INTO poem_poetry values( '','过零丁洋','文天祥','宋','绝句','爱国诗','<p>辛苦遭逢起一经，干戈寥落四周星。</p><p>山河破碎风飘絮，身世浮沉雨打萍。</p><p>惶恐滩头说惶恐，零丁洋里叹零丁。</p><p>人生自古谁无死？留取丹心照汗青。</p>','回想我早年由科举入仕历尽千辛万苦，如今战火消歇已经过四年的艰苦岁月。国家危在旦夕似那狂风中的柳絮，自己一生的坎坷如雨中浮萍，漂泊无根，时起时沉。惶恐滩的惨败让我至今依然惶恐，可叹我零丁洋里身陷元虏自此孤苦无依。自古以来，人终不免一死！倘若能为国尽忠，死后仍可光照千秋，青史留名。');
+
+INSERT INTO poem_poetry values( '','声声慢·寻寻觅觅','李清照','宋','词','闺怨诗','<p>寻寻觅觅，冷冷清清，凄凄惨惨戚戚。乍暖还寒时候，最难将息。三杯两盏淡酒，怎敌他、晚来风急？雁过也，正伤心，却是旧时相识。</p><p>满地黄花堆积，憔悴损，如今有谁堪摘？守着窗儿，独自怎生得黑？梧桐更兼细雨，到黄昏、点点滴滴。这次第，怎一个愁字了得！</p>','苦苦地寻寻觅觅，却只见冷冷清清，怎不让人凄惨悲戚。秋天总是忽然变暖，又转寒冷，最难保养休息。喝三杯两杯淡酒，怎么能抵得住傍晚的寒风紧吹？一行大雁从头顶上飞过，更让人伤心，因为都是当年为我传递书信的旧日相识。园中菊花堆积满地，都已经憔悴不堪，如今还有谁来采摘？孤独的守着窗前，独自一个人怎么熬到天黑？梧桐叶上细雨淋漓，到黄昏时分，那雨声还是点点滴滴。这般光景，怎么能用一个“愁”字了结！');
+INSERT INTO poem_poetry values( '','菩萨蛮·小山重叠金明灭','温庭筠','唐','词','闺怨诗','<p>小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。</p><p>照花前后镜，花面交相映。新帖绣罗襦，双双金鹧鸪。</p>','眉妆漫染，额上的额黄半明半暗的闪耀着，鬓边发丝散漫将掩未掩那雪白的面颊。懒懒地无心去描弯弯的眉，迟了好久才起身梳理晨妆。照一照新插的花朵，对了前镜，又对后镜，红花与容颜交相辉映。刚刚穿上的崭新绫罗短衣，上边绣贴着一双双的金鹧鸪。');
+INSERT INTO poem_poetry values( '','李白墓','白居易','唐','绝句','悼亡诗','<p>采石江边李白坟，绕田无限草连云。</p><p>可怜荒垄穷泉骨，曾有惊天动地文。</p><p>但是诗人多薄命，就中沦落不过君。 </p>','李白的坟就在采石江边，坟地周围的野草向着天边肆意蔓延。可悲的是这荒坟深穴中的枯骨，当他还在人世时，曾经写过惊天动地的诗文。
+但凡是杰出的诗人，大都命运多舛，可又有哪一个的命运，像李白一般坎坷悲惨？');
+INSERT INTO poem_poetry values( '','吊白居易','李忱','唐','绝句','悼亡诗','<p>辛缀玉联珠六十年，谁教冥路作诗仙。</p><p>浮云不系名居易，造化无为字乐天。</p><p>童子解吟长恨曲，胡儿能唱琵琶篇。</p><p>文章已满行人耳，一度思卿一怆然。</p>','你应该继续做大唐的诗人，谁教你那么突然就走了。人如浮云，想留也留不住你，愿你随处安居，原谅我造化不够，想唤回你的生命也是徒然，愿你九天之上能够快乐，巧妙地嵌入逝者名、字。你名闻大唐天下，你的诗篇光耀子孙，连孩童也会吟《长恨歌》，胡人也能唱《琵琶行》。你的功德和声望行人尽知，我会常常想起你来。');
+INSERT INTO poem_poetry values( '','八阵图','杜甫','唐','绝句','怀古诗','<p>功盖三分国，名成八阵图。</p><p>江流石不转，遗恨失吞吴。</p>','三国鼎立你建立了盖世功绩，创八阵图你成就了永久声名。任凭江流冲击，石头却依然如故，千年遗恨，在于刘备失策想吞吴。');
+INSERT INTO poem_poetry values( '','念奴娇·赤壁怀古','苏轼','宋','词','怀古诗','<p>大江东去，浪淘尽，千古风流人物。</p><p>故垒西边，人道是，三国周郎赤壁。</p><p>乱石穿空，惊涛拍岸，卷起千堆雪。</p><p>江山如画，一时多少豪杰。</p><p>遥想公瑾当年，小乔初嫁了，雄姿英发。</p><p>羽扇纶巾，谈笑间，樯橹灰飞烟灭。</p><p>故国神游，多情应笑我，早生华发。</p><p>人生如梦，一尊还酹江月。</p>','大江之水滚滚不断向东流去，滔滔巨浪淘尽千古英雄人物。那旧营垒的西边，人们说那就是三国时周郎大破曹兵的赤壁。岸边乱石林立，像要刺破天空，惊人的巨浪拍击着江岸，激起的浪花好似千万堆白雪。雄壮的江山奇丽如图画，一时间涌现出多少英雄豪杰。
+遥想当年的周瑜春风得意，小乔刚刚嫁给了他做妻子，英姿雄健风度翩翩神采照人。手摇羽扇头戴纶巾，谈笑之间，就把强敌的战船烧得灰飞烟灭。如今我身临古战场神游往昔，可笑我有如此多的怀古柔情，竟如同未老先衰般鬓发斑白。人生犹如一场梦，且洒一杯酒祭奠江上的明月。');
+
+
+
+
+drop table if exists poem_quote;
+
+create table poem_quote(
+	QUOTE_ID int(5) not null AUTO_INCREMENT,
+	QUOTE_CONETNT varchar(50) not null,
+	QUOTE_SOURCE varchar(20) not null,
+	QUOTE_KEY varchar(10) not null,
+	QUOTE_COUNTRY  varchar(20) not null,
+	primary key(QUOTE_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+INSERT INTO poem_quote values('1','为中华之崛起而读书。','周恩来','爱国','中国');
+INSERT INTO poem_quote values('2','宝剑锋从磨砺出，梅花香自苦寒来。','《警世贤文》','坚毅','中国');
+INSERT INTO poem_quote values('3','路漫漫其修远兮，吾将上下而求索。','屈原','坚毅探索','中国');
+INSERT INTO poem_quote values('4','静以修身，俭以养德，非淡泊无以明志，非宁静无以致远。','诸葛亮','修身','中国');
+INSERT INTO poem_quote values('5','世上无难事,只要肯登攀。','毛泽东','坚毅','中国');
+INSERT INTO poem_quote values('6','虚心使人进步，骄傲使人落后。','毛泽东','谦虚','中国');
+INSERT INTO poem_quote values('7','古之立大志者，不惟有超世之才，亦必有坚韧不拔之志。','苏轼','坚毅','中国');
+INSERT INTO poem_quote values('8','有志者，事竟成，破釜沉舟，百二秦关终属楚；苦心人，天不负，卧薪尝胆，三千越甲可吞吴。','蒲松龄','坚毅','中国');
+INSERT INTO poem_quote values('9','业精于勤，荒于嬉；行成于思，毁于随。','韩愈','勤奋','中国');
+INSERT INTO poem_quote values('10','千里之行，始于足下。','老子','脚踏实地','中国');
+INSERT INTO poem_quote values('11','骐骥一跃，不能十步；驽马十驾，功在不舍；锲而舍之，朽木不折；锲而不舍，金石可镂。','荀子','坚毅','中国');
+INSERT INTO poem_quote values('12','人，最可怕的不是疾病，而是丧失了意志和信念。','《穆斯林的葬礼》','意志信念','中国');
+INSERT INTO poem_quote values('13','没有一个冬天不可逾越，没有一个春天不会来临。','《南方周报》','希望','中国');
+INSERT INTO poem_quote values('14','燕雀戏藩柴，安识鸿鹄游。','曹植','目标','中国');
+INSERT INTO poem_quote values('15','方向是比速度更重要的追求。','白岩松','目标','中国');
+INSERT INTO poem_quote values('16','当我们爱脚下的泥泞时，说明我们已经拥抱了一种精神。','迟子建','家国','中国');
+INSERT INTO poem_quote values('17','大厦之成，非一木之材也；大海之润，非一流之归也。','《东周列国志》','家国','中国');
+INSERT INTO poem_quote values('18','履不必同，期于适足；治不必同，期于利民。','魏源','家国','中国');
+INSERT INTO poem_quote values('19','当华美的叶片落尽，生命的脉络才历历可见。','聂鲁达','磨练','中国');
+INSERT INTO poem_quote values('20','历经万般红尘劫，犹如凉风轻拂面。','林清玄','磨练','中国');
+INSERT INTO poem_quote values('21','枫叶经霜艳，梅花透雪香。','邓石如','磨练','中国');
+INSERT INTO poem_quote values('22','玉可碎而不可改其白，竹可焚而不可毁其节。','《三国演义》','坚毅','中国');
+INSERT INTO poem_quote values('23','粗粝能甘，必是有为之士；纷华不染，方称杰出之人。','《围炉夜话》','坚毅','中国');
+INSERT INTO poem_quote values('24','本来，生命只有一次，对于谁都是宝贵的。','瞿秋白','生命','中国');
+INSERT INTO poem_quote values('25','人生天地之间，若白驹之过隙，忽然而已。','庄周','生命','中国');
+INSERT INTO poem_quote values('26','生命，只要你充分利用，它便是长久的。','塞内加','生命','古罗马');
+INSERT INTO poem_quote values('27','能将自己的生命寄托在他人记忆中，生命仿佛就加长了一些；光荣是我们获得的新生命，其可珍可贵，实不下于天赋的生命。','孟德斯鸠','生命','法国');
+INSERT INTO poem_quote values('28','世界上只有一种英雄主义，那就是了解生命而且热爱生命的人。','罗曼罗兰','生命','法国');
+INSERT INTO poem_quote values('29','有时我想，要是人们把活着的每一天都看作是生命的最后一天该有多好啊！这就更能显出生命的价值。','海伦凯勒','生命','美国');
+INSERT INTO poem_quote values('30','有些鸟是注定不会被关在牢笼里的，它们的每一片羽毛都闪耀着自由的光辉。','《肖申克的救赎》','自由','美国');
+INSERT INTO poem_quote values('31','宿命论是那些缺乏意志力的弱者的借口。','罗曼罗兰','坚毅','法国');
+INSERT INTO poem_quote values('32',' 从工作里爱了生命，就是通彻了生命最深的秘密。','纪伯伦','热爱','阿拉伯');
+INSERT INTO poem_quote values('33','最好不要在夕阳西下的时候去幻想什么，而要在旭日初升的时候即投入工作。','谢觉哉','工作','中国');
+INSERT INTO poem_quote values('34','任何教育都比不上灾难的教育。','迪斯雷利','教育','英国');
+INSERT INTO poem_quote values('35','习惯象一根缆绳，我们每天给他缠上一股新索，要不了多久他就会变的牢不可破。','曼恩','习惯','美国');
+
+drop table if exists poem_user;
+
+create table poem_user(
+	USER_ID varchar(20) not null,
+	USER_PASSWORD varchar(20) not null,
+	USER_GENDER varchar(1) not null,
+	USER_BIRTHDAY datetime default null,
+	USER_EMAIL varchar(32) default null,
+	USER_CODE varchar(6) default null,
+	USER_AVATAR varchar(128) default null,
+	USER_ENTEND varchar(32) default null,
+	USER_STATUS varchar(1)  not null,
+	primary key(USER_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+INSERT INTO poem_user values ('Aike', 'Welcomza', 'M', '1996-4-29 00:00:00', 'lolzuancike@sohu.com', '', '', '', '0');
+INSERT INTO poem_user values('athree', '333333', 'M', '1980-1-1 00:00:00', 'Indiaathree@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('cap', 'onyourleft', 'M', '1960-7-25 00:00:00', 'usacap@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('cindy', 'liuyifei', 'F', '1987-8-25 00:00:00', 'cindyi@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('ciyuanjiang', 'Ciyuan22', 'F', '1999-12-12 00:00:00', 'xqqcnxk@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('daofu', 'qimendunjia', 'M', '1988-6-6 00:00:00', 'qimendunjia@126.com', '', '', '', '1');
+INSERT INTO poem_user values ('dogee', 'chengguo', 'F', '1995-5-23 00:00:00', 'dogdogee@126.com', '', '', '', '1');
+INSERT INTO poem_user values ('drhanbean', 'Hanbean233', 'M', '1980-6-15 00:00:00', 'humorbean@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('fahasiki', 'Nikoniko1', 'F', '2001-12-11 00:00:00', 'lolniko@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('Faker', 'Sktmid', 'F', '1991-4-3 00:00:00', 'simida@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('glassheart', 'ohhhnooo', 'F', '1998-2-6 00:00:00', 'donthurtme@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('hulk', 'greenhulk', 'M', '1985-3-13 00:00:00', 'greenmaster@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('iu', 'iuiuaena', 'F', '1993-5-16 00:00:00', 'iuloveuaena@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('jaweis', 'guanjia', 'M', '1977-6-19 00:00:00', 'ironmangj@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('jennie', 'rapper', 'F', '1996-1-16 00:00:00', 'blackpinkjn@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('jisoo', 'aniong', 'F', '1995-1-3 00:00:00', 'blackpinkjs@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('keluoyi', 'Enjoy111', 'F', '1993-8-30 00:00:00', 'lolzhangyu@sohu.com', '', '', '', '0');
+INSERT INTO poem_user values ('kimkersi', 'Rocket4444', 'F', '1998-12-25 00:00:00', 'lolrrocket@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('lalisa', 'maimidangka', 'F', '1997-3-27 00:00:00', 'blackpinkla@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('maozi', 'Sukabulie', 'M', '1992-1-28 00:00:00', 'eluuuoosi@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('mark', 'm14589k', 'M', '1994-8-14 00:00:00', '4569981567@qq.com', '', '', '', '1');
+INSERT INTO poem_user values ('ming', 'Rngsup', 'M', '1996-9-8 00:00:00', 'royalng@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('missfortune', 'Ahahaha010', 'F', '1998-10-19 00:00:00', 'lolmissf@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('more', 'moreandm', 'F', '1996-1-14 00:00:00', '15069814567@139.com', '', '', '', '1');
+INSERT INTO poem_user values ('nineywx', '999999', 'M', '2000-9-28 00:00:00', '267524359@qq.com', '', '', '', '1');
+INSERT INTO poem_user values ('Orange', 'Carfly666', 'F', '2000-8-28 00:00:00', 'QQfeiche@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('PDD', 'liekai', 'M', '1987-6-11 00:00:00', 'fanxiang@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('peach', 'Thinkpeach', 'M', '1997-8-22 00:00:00', 'thinking@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('peter', 'Spiderman', 'M', '1997-10-7 00:00:00', 'goodneighbour@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('qiezi', 'Wdnmd666', 'M', '1989-5-11 00:00:00', '18399456128@139.com', '', '', '', '1');
+INSERT INTO poem_user values ('rose', 'vocal', 'F', '1997-2-11 00:00:00', 'blackpinkrs@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('stone', 'stongstone', 'M', '1993-11-30 00:00:00', 'onmyway@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('sy', '123456', 'F', '1998-5-18 00:00:00', '1012336581@qq.com', '', '', '', '1');
+INSERT INTO poem_user values ('techerhe', 'kuaile', 'M', '1981-8-1 00:00:00', 'kldbyhj@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('telep', 'Iampoop23', 'M', '1993-11-30 00:00:00', 'Iamshiiit@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('timer', 'crtltime', 'F', '1990-4-25 00:00:00', 'xiuxiuxiu@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('tony', 'Stark888', 'M', '1985-2-5 00:00:00', 'starkfactory@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('Top1', 'Qixiaodian', 'M', '1993-8-21 00:00:00', 'qxdsdt@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('Tutu', 'bigears', 'M', '2001-9-11 00:00:00', 'daerduo@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('wangdefa', 'Wtfff888', 'M', '1994-4-27 00:00:00', 'wwwwwhat@163.com', '', '', '', '1');
+INSERT INTO poem_user values ('wanglei', '100100', 'M', '1998-2-28 00:00:00', '1395969489@139.com', '', '', '', '1');
+INSERT INTO poem_user values ('xiaoxiao', 'chengxiao', 'F', '1998-7-15 00:00:00', 'yzsvcx@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('xiaoyy', 'Deyunyyp', 'M', '1991-3-18 00:00:00', 'deyunyige@sohu.com', '', '', '', '1');
+INSERT INTO poem_user values ('yyyang', 'yangyang', 'M', '1991-9-9 00:00:00', 'yyyang@suhu.com', '', '', '', '1');
+INSERT INTO poem_user values ('zitai', 'Rnghecker', 'M', '1993-6-26 00:00:00', 'rngheihei@sohu.com', '', '', '', '1');
+
+
+
+
+drop table if exists poem_comment;
+
+create table poem_comment(
+	COMMENT_ID int(5) not null AUTO_INCREMENT,
+	COMMENT_TYPE varchar(10) not null, 
+	COMMENT_ED_ID int(5) not null,
+	COMMEN_CONETNT text not null,
+	primary key(COMMENT_ID)
+)ENGINE=InnoDB default charset=utf8;
+
+
+drop table if exists poem_count;
+
+create table poem_count(
+	COUNT_ID int(5) not null AUTO_INCREMENT,
+	COUNT_TYPE varchar(10) not null,
+	COUNT_ED_ID int(5) not null,
+	COUNT_LIKE int(5) not null,
+	COUNT_STAR int(5) not null,
+	COUNT_READ int(5) not null,
+	primary key(COUNT_ID)
+)ENGINE=InnoDB default charset=utf8;
+
