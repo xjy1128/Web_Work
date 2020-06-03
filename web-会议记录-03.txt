@@ -1,0 +1,22 @@
+
+时间：
+	2020/03/21 21:00
+任务：
+	验收之前任务
+	分配前端任务
+	讨论#tasks
+
+jsp +servlet
+登录      liuxiao   login
+主页      sunyue   index
+注册      qianhui   register
+个人页面    wenxu  personal
+找回密码    shimeng   forget
+后台登录   yixuan    login
+
+
+
+
+周一晚sql；
+周六晚html；
+周六晚上项目书；
