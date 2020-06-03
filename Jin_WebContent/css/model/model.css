@@ -1,0 +1,61 @@
+/* 导航背景图片ico */
+.navbar-brand{
+	background-image: url(../../images/model/k13.ico);
+	width: 60px;
+	height: 50px;
+	background-size: cover;
+}
+/* 导航背景图 */
+.header_box{
+	height: 200px;
+	background-image: url(../../images/model/banner.jpg);
+	background-size: cover;
+}
+/* 导航2样式设置start */
+.nav_box li a :active{
+	color: #117A8B;
+}
+.nav_box a :visited{
+	color: #117A8B;
+}
+/* 导航2样式设置end */
+#show_message1{
+	margin-top: 20px;
+}
+/* 设置左边面包屑导航的顶边距 */
+.bread_left{
+	margin-top: 20px;
+}
+/* 设置右边面包屑导航样式 */
+.bread_right{
+	margin-left: 5%;
+	margin-top: 20px;
+}
+/* 右边卡片视图样式 */
+.card_right{
+	margin-left: 5%;
+}
+/* 面包屑导航字体样式 */
+.breadcrumb li b{
+	color: white;
+}
+/* 侧边栏卡片视图 */
+.side_adv{
+	width: 18%;
+	float: left;
+	/* position: absolute; */
+	z-index: 999;
+}
+.side_card{
+	float: right;
+	width: 18%;
+	z-index: 999;
+} 
+/* footer */
+.footer{
+	margin-top: 20px;
+	padding: 30px 0;
+	text-align: center;
+	color: #999;
+}
+/* footer */

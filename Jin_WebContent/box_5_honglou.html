@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/model/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/model/model.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="header_box">
+			<!-- 导航1 -->
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- css设置背景图片 -->
+					<a href="#" class="navbar-brand"></a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											首页
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="tang_poem_list.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											古诗词
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="idiom_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											成语故事
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="quote_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名人名言
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="literary_work_china_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名著推荐
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="about.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											关于我们
+										</span>
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" class="form-inline my-md-0 col-auto">
+						<input type="text" class="form-control mr-sm-2" placeholder="请输入关键字"/>
+						<button class="btn btn-info my-md-0" style="color: white;"><a class="" style="color: white;"  href="search.html">搜索</a></button>
+						<button class="btn btn-info m-2"><a class="" style="color: white;" href="login.html">登录</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="register.html">注册</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="Back-End/admin_login.jsp">管理员登录</a></button>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- 导航二 -->
+		<el-navbar class="nav_box">
+			<div class="container my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">古诗词</a>
+						<div class="dropdown-menu">
+							<a href="tang_poem_list.html" class="dropdown-item">
+								唐诗
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="song_poem_list.html" class="dropdown-item">
+								宋词
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="yuan_poem_list.html" class="dropdown-item">
+								元曲
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">成语故事</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								典故
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								生肖
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								数字
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">名人名言</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info mr-2">名著推荐</a>
+						<div class="dropdown-menu">
+							<a href="literary_work_china_1.html" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="literary_work_foreign_1.html" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">现代诗</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								分类1
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								分类2
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info">创作园地</a>
+					</li>
+				</ul>
+			</div>
+		</el-navbar>
+		<!-- 主体部分 -->
+		<el-main>
+			<div class="container">
+				<!-- 标题 -->
+				<div class="start">
+					<h3><span class="badge badge-info">[hóng lóu mèng]</span></h3>
+					<h2><span class="badge badge-info">&nbsp;&nbsp;红&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦&nbsp;&nbsp;</span></h2>
+				</div>
+				<!-- 轮播图 -->
+				<div class="row">
+					<div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-ride="carousel" data-interval="3000">
+					  <div class="carousel-inner pl-0">
+					    <div class="carousel-item active">
+					        <img src="./images/box_5/1.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="./images/box_5/2.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="./images/box_5/3.jpg" class="d-block w-100" alt="...">
+					    </div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/4.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/5.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/6.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/7.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/8.jpg" class="d-block w-100" alt="...">
+						</div>
+					  </div>
+					</div>
+					<div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-ride="carousel" data-interval="3000">
+					  <div class="carousel-inner pl-0">
+						<div class="carousel-item active">
+						  <img src="./images/box_5/9.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/10.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/11.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/12.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/13.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/14.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/15.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/16.jpg" class="d-block w-100" alt="...">
+						</div>
+					  </div>
+					</div>
+					<div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-ride="carousel" data-interval="3000">
+					  <div class="carousel-inner pl-0">
+					    <div class="carousel-item active">
+					        <img src="./images/box_5/17.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="./images/box_5/18.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="./images/box_5/19.jpg" class="d-block w-100" alt="...">
+					    </div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/20.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/21.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/22.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="./images/box_5/23.jpg" class="d-block w-100" alt="...">
+						</div>
+					  </div>
+					</div>
+				</div>
+				<!-- 简介 -->
+				<div class="card">
+					<div class="card-header mt-4">红楼梦简介</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《红楼梦》，中国古代章回体长篇小说，中国古典四大名著之一，一般认为是清代作家曹雪芹所著。小说以贾、史、王、薛四大家族的兴衰为背景，以富贵公子贾宝玉为视角，以贾宝玉与林黛玉、薛宝钗的爱情婚姻悲剧为主线，描绘了一批举止见识出于须眉之上的闺阁佳人的人生百态，展现了真正的人性美和悲剧美，可以说是一部从各个角度展现女性美以及中国古代社会世态百相的史诗性著作。</li>
+						<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《红楼梦》版本可分为120回“程本”和80回“脂本”两大系统。程本为程伟元排印的印刷本，脂本为脂砚斋在不同时期抄评的早期手抄本。脂本是程本的底本。</li>
+						<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《红楼梦》是一部颇具世界影响力的人情小说，举世公认的中国古典小说巅峰之作，中国封建社会的百科全书，传统文化的集大成者。小说以“大旨谈情，实录其事”自勉，只按自己的事体情理，按迹循踪，摆脱旧套，新鲜别致，取得了非凡的艺术成就。“真事隐去，假语村言”的特殊笔法更是令后世读者脑洞大开，揣测之说久而遂多。二十世纪以来，学术界因《红楼梦》异常出色的艺术成就和丰富深刻的思想底蕴而产生了以《红楼梦》为研究对象的专门学问——红学。</li>
+					</ul>
+				</div>
+				<!-- 人物信息 -->
+				<h3><span class="badge badge-info">金陵十二钗</span></h3>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/lindaiyu.jpg" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">林黛玉</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							金陵十二钗之冠。林如海与贾敏之女，宝玉的姑表妹，寄居荣国府。她生性孤傲，不善处世，不屑种种流行的为人处事之道，多愁善感，才思敏捷。她与宝玉真心相爱，是宝玉反抗封建礼教的同盟，是自由恋爱的坚定追求者。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							林黛玉是书中一位富有诗意美和理想色彩的悲剧形象。她美得让人由衷地心疼和爱怜，更具艺术魅力的是她无与伦比的丰富而优美的精神世界。她博览群书，学识渊博，有多方面的才能，身上还闪耀着追求个性解放、争取婚姻自由的朴素的民主主义思想的光辉。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">薛宝钗</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							与黛玉并列金陵十二钗之冠，来自四大家族之薛家，薛姨妈之女，宝玉的姨表姐。她是一个复杂的矛盾纠葛体。她大方典雅，举止雍容，既有大家闺秀卓越的气质，沉静淡泊、温柔平和的性格，又有心灵深处隐藏的豪放大度。她对官场黑暗深恶痛绝，但仍规谏宝玉读书做官。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							父亲（薛姨父）早亡，有母亲（薛姨妈）和哥哥（薛蟠）。宝钗进京后与母亲薛姨妈、哥哥薛蟠暂住于贾府的梨香院，后迁居与东北上一处幽静的房所。因红楼梦八十回后失传，故据推测，林黛玉病死后，贾宝玉与薛宝钗成婚，但最终未与之白头偕老，贾宝玉没多久便看破红尘出家为僧。
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/xuebaochai.jpg" class="card-img" alt="..." style="width: 200px; float: right;">
+					</div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/yuanchuan.jpg" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">贾元春</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾元春是中国古典小说《红楼梦》中的人物。金陵十二钗之一，贾政与王夫人所生的嫡长女，贾珠的亲妹妹，贾宝玉的亲姐姐，贾家四姐妹之首。贾元春比贾珠小一两岁，比宝玉大十一二岁，贾府通称娘娘。她十分宠爱弟弟贾宝玉，为了贾宝玉的名誉及前程而极力支持金玉良缘，希望薛宝钗成为自己的弟媳妇。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾元春因生于正月初一而起名元春。元春十几岁时便已入宫做女史，23-24岁时加封贤德妃。为了迎接元春省亲，贾府建造了大观园。元春24-25岁回娘家省亲，热闹欢腾，同时又表现出她在深宫高处不胜寒的辛苦。元春的命运关乎贾府兴衰，秦可卿之死标志着贾府末世来临，元春晋封贵妃则令贾府重现生机，她也是四大家族最大的支柱。高鹗续书的后四十回她与王子腾先后暴卒，贾府失去了靠山，很快就获罪抄家。（根据第五回的判词，“虎兕相逢大梦归”，还有脂砚斋在元春点的一出《乞巧》中批：‘《长生殿》中伏元妃之死’可以判断，贾元春应该是怀孕后牺牲于政治斗争。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">贾探春</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾探春，曹雪芹所著《红楼梦》中人物，金陵十二钗之一，荣国府贾政与奴婢出身的妾室赵姨娘所生的女儿，贾宝玉同父异母的妹妹，贾府通称三姑娘，宝玉及三春均在贾母身边抚养长大，所受教育极好，与嫡姐元春无异，林黛玉进贾府后搬到王夫人住处，元春省亲后住大观园。她精明能干，富有心机，能决断，有“玫瑰花”之诨名，连王夫人与凤姐都忌惮她几分，抄检大观园时她扇了王善保家的一巴掌；她工诗善书，趣味高雅，曾发起建立海棠诗社，是大观园中的一位大才女；她关心家国大事，有经世致用之才，曾奉王夫人之命代凤姐理家，为了捧太太重用的奴婢袭人而打压赵姨娘，造成明明是奴婢家眷不该有丧礼费却高过身为姨太太赵姨娘的家眷，并主持大观园改革，是一位雄才伟略的政治家、改革家。
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/tanchui.jpg" class="card-img" alt="..." style="width: 200px; float: right;">
+					</div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/xiangyun.jpg" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">史湘云</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							史湘云是中国古典名著《红楼梦》中的人物，金陵十二钗之一，金陵省贾、史、王、薛四大家族史家的千金，父母在她还是襁褓中婴儿的时候就已经亡故，由叔叔婶婶养育。她是贾母的内侄孙女，贾府通称史大姑娘。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							史湘云是一个富有浪漫色彩、令人喜爱的豪爽女性。但她毕竟是薄命司中的女儿，自幼父母双亡，由于史家经济拮据，也没有过上贵族小姐娇生惯养的生活；经史湘云的判词中推测，她最后嫁了一位才貌俱佳的郎君，但夫婿很快亡故，过着拮据的孤寡生活。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">妙玉</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							妙玉，《红楼梦》金陵十二钗之一，苏州人氏，是一个带发修行的居士。她原是仕宦人家的小姐，自小在玄墓蟠香寺出家为尼。贾府建造大观园，妙玉入住栊翠庵。她在贾母、王夫人面前从容自若，不卑不亢；在大观园的日子里，她与宝玉、黛玉、宝钗、湘云、惜春、邢岫烟结下友谊；她美丽聪颖，心性高洁，却遭人嫉恨，举世难容；她是佛家弟子，文学上却大爱庄子，感情上又尘缘未了，不洁不空；她才华馥郁，品位高雅，栊翠庵品茶，刻画她茶艺精湛，中秋夜联诗，塑造她为“红楼诗仙”。宝玉丢失通灵宝玉，岫烟请妙玉扶乩。贾母病危，妙玉不请自来，探望病情。贾母出殡次日，妙玉被贼人掳走，宝玉悲伤叹惋。再后来，贾府传闻她在海边遇害
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/miaoyu.bmp" class="card-img" alt="..." style="height: auto; float: right;">
+					</div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/yingchun.jpg" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">贾迎春</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾迎春是中国古典小说《红楼梦》中登场的虚拟人物，金陵十二钗之一，贾宝玉的堂姐。
+							出身尚存争议，常见版本原文：“二小姐乃赦老爹之妾所出，名迎春，”有版本则说是贾赦前妻所出、贾政之妻所出、贾政所收养女等等。红学界普遍认为是曹雪芹多次删改未定稿而造成的疏误。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							迎春老实无能，懦弱怕事，有“二木头”的诨名。她不但作诗猜谜不如姐妹们，在处世为人上，也只知退让，任人欺侮。她的攒珠累丝金凤首饰被下人拿去赌钱（累金凤事件），她不追究。绣橘、探春、平儿设法要替她追回并惩处下人她却说：“宁可没有了，又何必生气。”她父亲贾赦欠了孙家五千两银子还不出，就把她嫁给孙家，实际上是拿她抵债。出嫁后不久（一年后），她就被孙绍祖虐待而死（“一载赴黄粱”），预示着荣国府已经开始逐步走向衰败。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">贾惜春</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾惜春是古典名著《红楼梦》中人物，金陵十二钗之一，她是贾家四姐妹中年纪最小的一位，宁国府中贾珍的胞妹。她父亲贾敬在书中开场就年岁已高，在道观中沉溺修道炼丹，最后死于金丹中毒，书中惜春母亲在她出生不久去世，她一直在荣国府贾母、王夫人身边长大。（注意：虽然贾家四姐妹名字相仿，但贾元春、贾迎春、贾探春是荣国府的人，而贾惜春是宁国府的人。）
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							将那三春看破，桃红柳绿待如何？
+							把这韶华打灭，觅那清淡天和。
+							说什么，天上夭桃盛，云中杏蕊多？
+							到头来，谁见把秋捱过？
+							则看那，白杨村里人呜咽，青枫林下鬼吟哦。
+							更兼着，连天衰草遮坟墓。
+							这的是，昨贫今富人劳碌，春荣秋谢花折磨。
+							似这般，生关死劫谁能躲？
+							闻说道，西方宝树唤婆娑，上结着长生果。
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/xichun.jpg" class="card-img" alt="..." style="height: auto; float: right;">
+					</div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/wangxifeng.jpg" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">王熙凤</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							王熙凤是中国古典小说《红楼梦》中人物，贾琏的妻子，王夫人的内侄女，贾府通称凤姐、琏二奶奶，金陵十二钗之一。她长着一双丹凤三角眼、两弯柳叶吊梢眉，身量苗条，体格风骚。在贾府掌握实权，为人心狠手辣，做事决绝，在高鹗续后四十回中最后病逝。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							王熙凤是贾母的孙媳妇，是贾赦和邢夫人的儿媳妇，是贾政的侄媳妇兼外侄女。是王夫人的内侄女，是贾琏的妻子，是巧姐的母亲，是贾蔷和贾蓉的远房婶子，是贾瑞的远房嫂子，是探春的堂嫂，是迎春的亲嫂子，是惜春的远房嫂子，是贾宝玉的舅表姊兼堂嫂，是薛宝钗的舅表姊兼堂妯娌，是林黛玉的舅表嫂子。深得贾母恩宠和王夫人赏识，成为贾家荣府的实际掌权者和财务管理者。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">贾巧姐</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							贾巧姐是中国古典小说《红楼梦》中的人物，为金陵十二钗之一，荣国府王熙凤与贾琏之女。巧姐由于年纪幼小，在书中出场不多。她生日七月初七，王熙凤觉得日子不好，所以怕自己起了名字犯冲，让刘姥姥代为起名。刘姥姥给她取名“巧姐”。巧姐的结局，也应了这一个巧字。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							在高鹗续写的《红楼梦》后四十回贾府破败后，她险些被王仁、贾蔷、贾芸等人卖给一个外藩王爷做粗使丫鬟， 幸而刘姥姥、平儿、王夫人合力将她救出，最后由贾琏作主嫁到姓周的地主家(此为高鹗续本结局)。但根据第五回的图册和判词，以及脂砚斋的批语。巧姐最后是嫁给了板儿，做了一个农妇。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							王熙凤便说大姐儿还没有名字，便请刘姥姥取一个，意在“一则借借你的寿，二则你们是庄家人，不怕你恼，到底贫苦些，你贫苦人起个名字，只怕压的住她。”刘姥姥听说大姐儿生日是农历七月初七，便给她起名巧姐，“这叫作‘以毒攻毒，以火攻火’的法子，日后或一时有不遂心的事，必然是遇难成祥，逢凶化吉，从这‘巧’字上来”
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/qiaojie.jpg" class="card-img" alt="..." style="height: auto; float: right;">
+					</div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-3">
+				      <img src="./images/box_5/liwan.bmp" class="card-img" alt="..." style="width: 200px;">
+				    </div>
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">李纨</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							古典名著《红楼梦》中人物，金陵十二钗之一，字宫裁。她是荣国府长孙贾珠之妻。贾珠夭亡，幸存一子，取名贾兰。亦系金陵名宦之女，父名李守中，曾为国子监祭酒。李纨青春守寡，心如“槁木死灰”，是封建淑女，是标准的节妇，是妇德妇功的化身。但她进入大观园后，恢复了青春朝气，不但带领诗社兴旺发达，而且把大观园治理成青春女儿的净土和乐园。
+						</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="row no-gutters">
+				    <div class="col-md-9">
+				      <div class="card-body">
+				        <h5 class="card-title">秦可卿</h5>
+				        <p class="card-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							中国古典小说《红楼梦》中的人物，金陵十二钗之一。贾蓉之妻，秦业的养女。她还有个无血缘关系的弟弟秦钟。来自仙界清净女儿之境，是太虚幻境之主警幻仙子的妹妹，官名兼美，乳名可卿，小名可儿。
+							<hr />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							她长得袅娜纤巧，性格风流，行事温柔平和，被贾母赞为重孙媳中第一得意之人；而在警幻仙界，她是警幻仙姑的妹妹。
+						</p>
+				      </div>
+				    </div>
+					<div class="col-md-3">
+					  <img src="./images/box_5/qinkeqing.bmp" class="card-img" alt="..." style="height: auto; float: right;">
+					</div>
+				  </div>
+				</div>
+			</div>
+		</el-main>
+		<!-- 页脚 -->
+		<div class="footer">
+			@版权
+		</div>
+		<script src="./js/model/jquery-3.4.1.min.js"></script>
+		<script src="./js/model/popper.min.js"></script>
+		<script src="./js/model/bootstrap.js"></script>
+	</body>
+</html>

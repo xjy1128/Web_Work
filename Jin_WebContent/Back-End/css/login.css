@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{
+	padding-top: 80px;
+	overflow-y: hidden;
+}
+.content{
+	/* background-image: url(../images/未命名_副本.jpg); */
+	/* background-repeat: unset; */
+}
+.message{
+	margin-top: 240px;
+	margin-bottom: 600px;
+}
+/* footer */
+.footer{
+	margin-top: 20px;
+	text-align: center;
+	color: #000;
+}
+/* footer */

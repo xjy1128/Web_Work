@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/model/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/model/model.css" />
+		<title>现代诗人</title>
+	</head>
+	<body>
+		<div class="header_box">
+			<!-- 导航1 -->
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- css设置背景图片 -->
+					<a href="#" class="navbar-brand"></a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											首页
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="tang_poem_list.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											古诗词
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="idiom_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											成语故事
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="quote_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名人名言
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="literary_work_china_1.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名著推荐
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="about.html" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											关于我们
+										</span>
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" class="form-inline my-md-0 col-auto">
+						<input type="text" class="form-control mr-sm-2" placeholder="请输入关键字" />
+						<button class="btn btn-info my-md-0" style="color: white;"><a class="" style="color: white;" href="search.html">搜索</a></button>
+						<button class="btn btn-info m-2"><a class="" style="color: white;" href="login.html">登录</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="register.html">注册</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="Back-End/admin_login.jsp">管理员登录</a></button>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- 导航二 -->
+		<el-navbar class="nav_box">
+			<div class="container my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">古诗词</a>
+						<div class="dropdown-menu">
+							<a href="tang_poem_list.html" class="dropdown-item">
+								唐诗
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="song_poem_list.html" class="dropdown-item">
+								宋词
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="yuan_poem_list.html" class="dropdown-item">
+								元曲
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">成语故事</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								典故
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								生肖
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								数字
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">名人名言</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info mr-2">名著推荐</a>
+						<div class="dropdown-menu">
+							<a href="literary_work_china_1.html" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="literary_work_foreign_1.html" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">现代诗</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								分类1
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								分类2
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info">创作园地</a>
+					</li>
+				</ul>
+			</div>
+		</el-navbar>
+		<!-- 主体部分 -->
+		<el-main>
+			<div class="container">
+				<h1>中国现代10大诗人评选，你最喜欢谁的诗</h1>
+				<hr />
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国现代诗从新文学运动到如今已经100年的时间了。这100年，中国的白话文文学实现了突飞猛进，在各个领域都出现了一大批的文学家。然而，白话文文学毕竟只有100年的历史，其成就远远不能和发展了几千年的文言文文学相抗衡。就如诗歌领域，100年来出现了多如牛毛的诗人，然而其优秀的诗篇并不多。如今，中国诗坛已经没有优秀的诗人出现，老干部体、梨花体、流氓体等霸占了各大诗刊，刊登诗歌不堪作品优劣，只看作者的地位和名声，这是如今文学界的悲哀。</p>
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#tab1" class="nav-link active" data-toggle="tab">郭沫若</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-toggle="tab" data-target="#tab2">闻一多</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab3" class="nav-link" data-toggle="tab">徐志摩</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab4" class="nav-link" data-toggle="tab">戴望舒</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab5" class="nav-link" data-toggle="tab">艾青</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab6" class="nav-link" data-toggle="tab">舒婷</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab7" class="nav-link" data-toggle="tab">北岛</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab8" class="nav-link" data-toggle="tab">海子</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab9" class="nav-link" data-toggle="tab">余光中</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab10" class="nav-link" data-toggle="tab">席慕蓉</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="tab1">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/guomoruo.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">郭沫若</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											郭沫若是中国新诗的界的代表人物，抛开人品不谈，他在诗坛的地位至今无人能够撼动。他的诗总体而言都是气势磅礴，达到了天人合一的状态。1919年，他写下了《凤凰涅槃》《地球，我的母亲》《炉中煤》等著名的诗篇，其中《凤凰涅槃》中是中国新诗界的一个标杆，至今无人超越。1921年出版第一本新诗集《女神》，是中国新诗的奠基之作。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab2">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/wenyiduo.jpeg" class="card-img" alt="..." style="height: auto;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">闻一多</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											中国新诗诞生之后，许多人不知道如何写新诗，摆脱不了传统诗词的束缚。直到闻一多出现后，中国新诗终于有了方向。他在新诗理论上提出了创造性的“新格律诗”理论，他认为诗歌必须有三美，分别是音乐的美，绘画的美，建筑的美。音乐美是指诗歌从听觉方面来说表现的美，包括节奏、平仄、重音、押韵、停顿等各方面的美，要求和谐，符合诗人的情绪，流畅而不拗口——这一点不包括为特殊效果而运用声音。绘画美是指诗歌的词汇应该尽力去表现颜色，表现一幅幅色彩浓郁的画面。建筑美是指针对自由体提出来的，指诗歌每节之间应该匀称，各行诗句应该一样长——这一样长不是指字数完全相等，而是指音尺数应一样多，这样格律诗就有一种外形的匀称均齐。以闻一多的理论为中心，形成了“新月诗派”。闻一多自己的诗歌代表作品有《死水》《七子之歌》《红烛》《太阳吟》《口供》《发现》《祈祷》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab3">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/xuzhimo.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">徐志摩</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											闻一多完成了新月派诗歌的理论建设，而徐志摩成为新月派诗歌创作的最好的实践者。徐志摩的诗集中西之所长，清新自然，感情细腻，意境深远，尤其擅长写缠绵悱恻的情诗，对后来的新诗创作都有很大的影响。可惜徐志摩这个渣男英年去世，不然还会出现更多的优美的诗篇。他的代表作有《再别康桥》《邂逅》《雪花的快乐》《沙扬挪拉》《常州天宁寺闻礼忏声》《我不知道风》《云游》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab4">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/daiwangshu.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">戴望舒</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											新月派发展到一定的阶段，许多诗人接受了西方现代象征主义的理论，逐渐演变为了现代诗派，戴望舒是其中的领袖人物。戴望舒诗歌中的忧郁情思为基点，诗歌中所蕴含的既有古典意味的生命感受。首先，戴望舒的爱情诗在表现爱情的隐私性以及表现爱情时多运用女性意象方面，明显地受到晚唐诗人的影响，从某种意义上甚至可以说是对温、李诗歌相思主题的现代连释。其代表作有《雨巷》《我的记忆》《我用残损的手掌》《断指》《寻梦者》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab5">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/aiqing.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">艾青</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											民国时代中国是一个苦难的旧中国，而以上的诗人的诗都无法表现中国人的苦难。当抗日战争到来之后，中国诗坛发生了深刻的变化，现实主义诗歌迅速崛起，而诗坛的领袖成为了艾青。艾青的诗如同史诗，如北方的黄土一般朴实，但是却深刻地反映着中国的悲哀，以及中国的希望。从30年代末到40年代，被称为"艾青的时代"。他的诗歌代表作有《大堰河－我的保姆》《北方》《黎明的通知》《雪落在中国的土地上》《我爱这土地》《手推车》《鱼化石》《向太阳》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab6">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/shuting.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">舒婷</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											50—70年代基本是诗歌的荒漠，直到80年代，诗歌才重新的繁荣起来。1980年开始，诗坛出现了一个新的诗派，被称为“朦胧派”，他们开始反思过去的历史，也被称为“伤痕文学”，其中舒婷是代表。她的诗歌充盈着浪漫主义和理想的色彩，对祖国、对人生、对爱情、对土地的爱，既温馨平和又潜动着激情。她的代表作有《双桅船》《致橡树》《神女峰》《祖国啊，我亲爱的祖国》《致大海》《一代人的呼声》《珠贝——大海的眼泪》。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab7">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/beidao.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">北岛</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											北岛是朦胧诗派的领袖人物，他的诗取得相当高的成就，并且多次被提名诺贝尔文学奖。从我们民族本身而言，从朦胧诗运动对当代中国人精神生活的启蒙和重建作用而言，从北岛在朦胧诗人中所居的重要地位而言，他无疑是我们新时期文学前十年中的大诗人，绝无仅有的诗坛偶像、文化英雄。代表作有《回答》《结局或开始——献给遇罗克》《红帆船》《在黎明的铜镜中》《迷途》《无题》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab8">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/haizi.jpeg" class="card-img" alt="..." style="width: 380px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">海子</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											在90年代后，中国的社会发生了巨大的变化，工业化的巨轮不断前进，传统农耕文明的宁静被打破。许多人的心灵出现被矛盾，悲哀，迷茫，在诗歌领域，海子就是其中的代表，他也是中国大陆最后的诗人之一了。海子诗歌的起点是生命元素。他自称他的长诗创作是出于某种巨大元素的召唤。这些生命元素潜藏在文明的深处。原始的主体力量的流动造就了人类文明史上最健全最高贵的文化，造就了史诗、悲剧和建筑。他的代表作有《麦子熟了》《村庄》《七月的大海》《五月的麦地》《我请求: 雨》《北斗七星, 七座村庄》《亚洲铜》《面朝大海, 春暖花开》《黎明》《山楂树》《春天, 十个海子》等。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab9">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/yuguangzhong.jpeg" class="card-img" alt="..." style="width: 380px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">余光中</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											湾的诗歌发展大陆有些不同，他们是沿着新月派、现代派的脚步继续前进的，在语言上，理论上继续探究诗歌创作。余光中就是其中的代表。余光中以诗歌创作为主，复以散文及评论扬名。其诗作多发抒诗人的悲悯情怀，对土地的关爱，对环保的指涉，以及对一切现代人事物的透视解析与捕捉。作者自传统出发走向现代，复又深入传统。他的诗歌代表作有《乡愁》《乡愁四韵》《春天，遂想起》《白玉苦瓜》《等你，在雨中》《登圆通寺》《莲的世界》《寻李白》。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tab10">
+						<div class="card">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="./images/box_8/ximurong.jpeg" class="card-img" alt="..." style="width: 200px;">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">席慕蓉</h5>
+										<p class="card-text">
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											席慕蓉是台湾诗人中的另外一位代表，她的诗歌多写爱情、乡愁、时光和生命，爱的抒发已成为席慕容诗歌的第一主题。而在这些爱的情感中，有甜蜜，也有忧愁。席慕容以一个女性特有的细腻的视角，来体验着生命中的温存。代表作有《长城谣》《一棵开花的树》《莲的心事》《古相思曲》《邂逅》《戏子》。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 诗歌赏析 -->
+				<div class="list-group mt-4">
+					<a href="#" class="list-group-item list-group-item-action">现代诗歌赏析</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+						<pre><strong>
+							《我爱这土地》
+							
+							假如我是一只鸟，
+							
+							我也应该用嘶哑的喉咙歌唱：
+							
+							这被暴风雨所打击着的土地，
+							
+							这永远汹涌着我们的悲愤的河流，
+							
+							这无止息地吹刮着的激怒的风，
+							
+							和那来自林间的无比温柔的黎明……
+							
+							——然后我死了，
+							
+							连羽毛也腐烂在土地里面。
+							
+							为什么我的眼里常含泪水?
+							
+							因为我对这土地爱得深沉……
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+						<pre><strong>
+							   《抉择》
+							
+							　　席慕容
+							
+							　　假如我来世上一遭
+							
+							　　只为与你相聚一次
+							
+							　　只为了亿万光年里的那一刹那
+							
+							　　一刹那里所有的甜蜜与悲凄
+							
+							　　那麽就让一切该发生的
+							
+							　　都在瞬间出现吧
+							
+							　　我俯首感谢所有星球的相助
+							
+							　　让我与你相遇
+							
+							　　与你别离
+							
+							　　完成了上帝所作的一首诗
+							
+							　　然後再缓缓地老去
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-success">
+						<pre><strong>
+							     《盼望》
+							   
+							   　　席慕容
+							   
+							   　　其实我盼望的
+							   
+							   　　也但是就只是那一瞬
+							   
+							   　　我从没要求过你给我
+							   
+							   　　你的一生
+							   
+							   　　如果能在开满了栀子花的山坡上
+							   
+							   　　与你相遇如果能
+							   
+							   　　深深地爱过一次再别离
+							   
+							   　　那麽再长久的一生
+							   
+							   　　不也就只是就只是
+							   
+							   　　回首时
+							   
+							   　　那短短的一瞬
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+						<pre><strong>
+							     《偶然》
+							     
+							 　　徐志摩
+							 
+							 　　我是天空里的一片云，
+							 
+							 　　偶尔投影在你的波心──
+							 
+							 　　你不必讶异，
+							 
+							 　　更无须欢喜──
+							 
+							 　　在转瞬间消灭了踪影。
+							 
+							 　　你我相逢在黑夜的海上，
+							 
+							 　　你有你的，我有我的，方向；
+							 
+							 　　你记得也好，
+							 
+							 　　最好你忘掉
+							 
+							 　　在这交会时互放的光亮！
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+						<pre><strong>
+							     《乡愁》
+							     
+							 　　席慕容
+							 
+							 　　故乡的歌
+							 
+							 　　是一支清远的笛
+							 
+							 　　总在有月亮的晚上
+							 
+							 　　响起
+							 
+							 　　故乡的面貌
+							 
+							 　　却是一种模糊的怅望
+							 
+							 　　仿佛雾里的
+							 
+							 　　挥手别离
+							 
+							 　　离别后
+							 
+							 　　乡愁是一棵没有年轮的树
+							 
+							 　　永不老去
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-info">
+						<pre><strong>
+							     《热爱生命》
+							     
+							 　　汪国真
+							 
+							 　　我不去想是否能够成功
+							 
+							 　　既然选取了远方
+							 
+							 　　便只顾风雨兼程
+							 
+							 　　我不去想能否赢得感情
+							 
+							 　　既然钟情于玫瑰
+							 
+							 　　就勇敢地吐露真诚
+							 
+							 　　我不去想身后会不会袭来寒风冷雨
+							 
+							 　　既然目标是地平线
+							 
+							 　　留给世界的只能是背影
+							 
+							 　　我不去想未来是平坦还是泥泞
+							 
+							 　　只要热爱生命
+							 
+							 　　一切，都在意料之中
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+						<pre><strong>
+							     《冰心》
+							     
+							 　　月明之夜的梦呵！
+							 
+							 　　远呢
+							 
+							 　　近呢
+							 
+							 　　但我们只这般不言语
+							 
+							 　　听——听
+							 
+							 　　这微击心弦的声！
+							 
+							 　　眼前光雾万重
+							 
+							 　　柔波如醉呵！
+							 
+							 　　沉——沉
+						</strong></pre>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+						<pre><strong>
+							     《断章》
+							     
+							 　　卞之琳
+							 
+							 　　你站在桥上看风景，
+							 
+							 　　看风景的人在楼上看你。
+							 
+							 　　明月装饰了你的窗子，
+							 
+							 　　你装饰了别人的梦。
+						</strong></pre>
+					</a>
+				</div>
+
+			</div>
+		</el-main>
+		<!-- 页脚 -->
+		<div class="footer">
+			@版权
+		</div>
+		<script src="./js/model/jquery-3.4.1.min.js"></script>
+		<script src="./js/model/popper.min.js"></script>
+		<script src="./js/model/bootstrap.js"></script>
+	</body>
+</html>

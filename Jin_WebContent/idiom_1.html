@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/model/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/model/model.css" />
+		<title>成语</title>
+	</head>
+	<body>
+		<div class="header_box">
+			<!-- 导航1 -->
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- css设置背景图片 -->
+					<a href="#" class="navbar-brand"></a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											首页
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											古诗词
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											成语故事
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名人名言
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名著推荐
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											关于我们
+										</span>
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" class="form-inline my-md-0 col-auto">
+						<input type="text" class="form-control mr-sm-2" placeholder="请输入关键字"/>
+						<button class="btn btn-info my-md-0" style="color: white;">搜索</button>
+						<button class="btn btn-info m-2"><a class="" style="color: white;" href="#">登录</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="#">注册</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="Back-End/admin_login.jsp">管理员登录</a></button>
+						<img src="./images/model/c7.png" />
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- 导航二 -->
+		<el-navbar class="nav_box">
+			<div class="container my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">古诗词</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								唐诗
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								宋词
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								元曲
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">成语故事</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								典故
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								生肖
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								数字
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">名人名言</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info mr-2">名著推荐</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">现代诗</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								分类1
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								分类2
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info">创作园地</a>
+					</li>
+				</ul>
+			</div>
+		</el-navbar>
+		<!-- 主体部分 -->
+		<el-main>
+			<div class="container">
+				<div class="row">
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+						  <h3>鼠目寸光</h3>
+					      <mark>[拼音][shǔ mù cùn guāng]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《临川梦·隐奸》</h5>
+						<hr />
+					    <p class="card-text">举例：我们从小就应树立远大理想，努力学习科学知识，决不做鼠目寸光的庸人。<p>
+					    <hr />
+						<p>解释：意为老鼠的眼睛只能看到一米远。形容目光短浅，没有远见。</p>
+					  </div>
+					</div>
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+					    <h3>不舞之鹤</h3><mark>[拼音][bù wǔ zhī hè]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《世说新语·排调》</h5>
+						<hr />
+					    <p class="card-text">举例：方宰淄时，松裁弱冠，过蒙器许，而驽钝不才，竟以不舞之鹤为羊公辱。<p>
+					    <hr />
+						<p">解释：比喻名不副实的人。也用来讥讽人无能。</p>
+					  </div>
+					</div>
+					
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+						  <h3>百折不回</h3>
+					      <mark>[拼音][bǎi zhé bù huí]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《太尉乔玄碑》</h5>
+						<hr />
+					    <p class="card-text">举例：耿耿自始，百折不回。<p>
+					    <hr />
+						<p>解释：比喻意志坚强，无论受到多少次挫折，毫不动摇退缩。</p>
+					  </div>
+					</div>
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+					    <h3>麟角凤觜 </h3><mark>[拼音][lín jiǎo fèng zuǐ]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《海内十洲记》</h5>
+						<hr />
+					    <p class="card-text">举例：麟角凤觜世莫识，煎胶续弦奇自见。<p>
+					    <hr />
+						<p">解释：比喻稀罕名贵的东西。</p>
+					  </div>
+					</div>
+					
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+						  <h3>汗马之功</h3>
+					      <mark>[拼音][hàn mǎ zhī gōng]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《太尉乔玄碑》</h5>
+						<hr />
+					    <p class="card-text">举例：倘效玄宗幸金牛之道，岂无诸将立汗马之功。<p>
+					    <hr />
+						<p>解释：指战争中立下的功绩。<p>
+					  </div>
+					</div>
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+					    <h3>乐极悲生 </h3><mark>[拼音][lè jí bēi shēng]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《史记·滑稽列传》</h5>
+						<hr />
+					    <p class="card-text">举例：可正是乐极悲生，今日个泰来否往。<p>
+					    <hr />
+						<p">解释：高兴到极点时，发生使人悲伤的事。</p>
+					  </div>
+					</div>
+					
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+						  <h3>巧舌如簧</h3>
+					      <mark>[拼音][qiǎo shé rú huáng]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《诗经·小雅·巧言》</h5>
+						<hr />
+					    <p class="card-text">举例：这个商人巧舌如簧，把次品说成是优等品，欺骗消费者。</p>
+					    <hr />
+						<p>解释：舌头灵巧，象簧片一样能发出动听的乐音。形容花言巧语，能说会道。</p>
+					  </div>
+					</div>
+					<div class="card col-6 mb-3">
+					  <div class="card-header bg-info">
+					    <h3>贻笑大方 </h3><mark>[拼音][yí xiào dà fāng]</mark>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title">出自：《庄子·秋水》</h5>
+						<hr />
+					    <p class="card-text">举例：去岁路过贵邦，就要登堂求教；但愧知识短浅，诚恐贻笑大方，所以不敢冒昧进谒。<p>
+					    <hr />
+						<p">解释：原指懂得大道的人，后泛指见识广博或有专长的人。指让内行人笑话。</p>
+					  </div>
+					</div>
+					
+				</div>
+			</div>
+		</el-main>
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination pagination-lg justify-content-center">
+		    <li class="page-item disabled">
+		      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">上一页</a>
+		    </li>
+			<li class="page-item active" aria-current="page">
+			      <span class="page-link">
+			        1
+			        <span class="sr-only">(current)</span>
+			      </span>
+			    </li>
+		    <li class="page-item"><a class="page-link" href="idiom_2.html">2</a></li>
+		    <li class="page-item"><a class="page-link" href="idiom_3.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="idiom_4.html">4</a></li>
+			<li class="page-item"><a class="page-link" href="idiom_5.html">5</a></li>
+		    <li class="page-item">
+		      <a class="page-link" href="idiom_2.html">下一页</a>
+		    </li>
+		  </ul>
+		</nav>
+		<!-- 页脚 -->
+		<div class="footer">
+			@版权
+		</div>
+		<script src="./js/model/jquery-3.4.1.min.js"></script>
+		<script src="./js/model/popper.min.js"></script>
+		<script src="./js/model/bootstrap.js"></script>
+	</body>
+</html>
