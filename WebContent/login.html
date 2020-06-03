@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/model/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/model/model.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="header_box">
+			<!-- 导航1 -->
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- css设置背景图片 -->
+					<a href="#" class="navbar-brand"></a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											首页
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											古诗词
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											成语故事
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名人名言
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名著推荐
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											关于我们
+										</span>
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" class="form-inline my-md-0 col-auto">
+						<input type="text" class="form-control mr-sm-2" placeholder="请输入关键字"/>
+						<button class="btn btn-info my-md-0" style="color: white;">搜索</button>
+						<button class="btn btn-info m-2"><a class="" style="color: white;" href="#">登录</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="#">注册</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="Back-End/admin_login.jsp">管理员登录</a></button>
+						<img src="./images/model/c7.png" />
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- 导航二 -->
+		<el-navbar class="nav_box">
+			<div class="container my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">古诗词</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								唐诗
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								宋词
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								元曲
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">成语故事</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								典故
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								生肖
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								数字
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">名人名言</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info mr-2">名著推荐</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">现代诗</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								分类1
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								分类2
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info">创作园地</a>
+					</li>
+				</ul>
+			</div>
+		</el-navbar>
+		<!-- 主体部分 -->
+		<el-main>
+			<div class="login row" style="height: 500px;">
+				<!-- 图片显示 -->
+				<div class="col-6 offset-2" style="position: relative;">
+					<img src="./images/search/1.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 34%; top: 12%;" />
+					<img src="./images/search/2.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 37%; top: 32%;" />
+					<img src="./images/search/3.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 27%; top: 62%;" />
+					<img src="./images/search/4.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 47%; top: 72%;" />
+					<img src="./images/search/5.jpg" style="position: absolute; height: 300px; width: auto; padding: 10px; border: 1px solid #000000; left: 15%; top: 10%;" />
+					<img src="./images/search/6.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 47%; top: 5%;" />
+					<img src="./images/search/7.jpg" style="position: absolute; height: 200px; width: auto; padding: 10px; border: 1px solid #000000; left: 57%; top: 42%;" />
+				</div>
+			    <div class="col-4">
+					<form action="#" method="post">
+						<h1>
+							<a href="index.html">
+								<img src="./Back-End/images/k13.ico" style="width: 50px;">
+							</a>
+						</h1>
+					    <!-- <p></p> -->
+					    <div class="msg-warn hide">
+							<!-- <b></b> -->
+							公共场所不建议自动登录，以防账号丢失
+						</div>
+					    <p>
+							<input type="text" name="" value="" placeholder="昵称/邮箱/手机号">
+						</p>
+					    <p>
+							<input type="text" name="" value="" placeholder="密码">
+						</p>
+					    <p>
+							<input class="" type="submit" name="" value="登  录">
+						</p>
+					    <p class="txt">
+							<a class="" href="register.html">免费注册</a>
+							<a href="forget.html">忘记密码？</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</el-main>
+		<!-- 页脚 -->
+		<div class="footer">
+			@版权
+		</div>
+		<script src="./js/model/jquery-3.4.1.min.js"></script>
+		<script src="./js/model/popper.min.js"></script>
+		<script src="./js/model/bootstrap.js"></script>
+	</body>
+</html>
