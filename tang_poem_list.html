@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/model/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/model/model.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="header_box">
+			<!-- 导航1 -->
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<!-- css设置背景图片 -->
+					<a href="#" class="navbar-brand"></a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											首页
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											古诗词
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											成语故事
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名人名言
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											名著推荐
+										</span>
+									</h3>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<h3>
+										<span class="badge badge-info">
+											关于我们
+										</span>
+									</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" class="form-inline my-md-0 col-auto">
+						<input type="text" class="form-control mr-sm-2" placeholder="请输入关键字"/>
+						<button class="btn btn-info my-md-0" style="color: white;">搜索</button>
+						<button class="btn btn-info m-2"><a class="" style="color: white;" href="#">登录</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="#">注册</a></button>
+						<button class="btn btn-info mr-2"><a class="" style="color: white;" href="Back-End/admin_login.jsp">管理员登录</a></button>
+						<img src="./images/model/c7.png" />
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- 导航二 -->
+		<el-navbar class="nav_box">
+			<div class="container my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">古诗词</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								唐诗
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								宋词
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								元曲
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">成语故事</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								典故
+								<span class="badge badge-info">20</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								生肖
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								数字
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">名人名言</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								国内
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								国外
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info mr-2">名著推荐</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info dropdown-toggle mr-2" data-toggle="dropdown">现代诗</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								分类1
+								<span class="badge badge-info">25</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								分类2
+								<span class="badge badge-info">26</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="btn btn-outline-info">创作园地</a>
+					</li>
+				</ul>
+			</div>
+		</el-narbar>
+		<!-- content -->
+		<div class="container content">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="list-group side-bar">
+						<a href="#" class="list-group-item active bg-info">唐诗</a>
+						<a href="#" class="list-group-item">唐诗------田园</a>
+						<a href="#" class="list-group-item">唐诗------边塞</a>
+						<a href="#" class="list-group-item">唐诗------抒情</a>
+						<a href="#" class="list-group-item">唐诗------思乡</a>
+						<a href="#" class="list-group-item">唐诗------爱国</a>
+						<a href="#" class="list-group-item">唐诗------闺怨</a>
+						<a href="#" class="list-group-item">唐诗------悼亡</a>	
+						<a href="#" class="list-group-item">唐诗------怀古</a>	
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<div class="news-list-item ">
+						<ul class="list-unstyled">
+							<li class="media">
+								<img src="../images/news/k3.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>一张机</mark></h5>
+									一张机，采桑陌上试春衣。风晴日暖慵无力， 桃花枝上，啼莺言语，不肯放人归。
+									一张机，采桑陌上试春衣。风晴日暖慵无力， 桃花枝上，啼莺言语，不肯放人归。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k4.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>两张机</mark></h5>
+									两张机，行人立马意迟迟。深心未忍轻分付， 回头一笑，花间归去，只恐被花知。
+									两张机，行人立马意迟迟。深心未忍轻分付， 回头一笑，花间归去，只恐被花知。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k5.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>三张机</mark></h5>
+									三张机，吴蚕已老燕雏飞。东风宴罢长洲苑， 轻绡催趁，馆娃宫女，要换舞时衣。
+									三张机，吴蚕已老燕雏飞。东风宴罢长洲苑， 轻绡催趁，馆娃宫女，要换舞时衣。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k8.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>四张机</mark></h5>
+									四张机，咿哑声里暗颦眉。回梭织朵垂莲子，盘花易绾，愁心难整，脉脉乱如丝。
+									四张机，咿哑声里暗颦眉。回梭织朵垂莲子，盘花易绾，愁心难整，脉脉乱如丝。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k9.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>五张机</mark></h5>
+									五张机，横纹织就沈郎诗。中心一句无人会， 不言愁恨，不言憔悴，只恁寄相思。
+									五张机，横纹织就沈郎诗。中心一句无人会， 不言愁恨，不言憔悴，只恁寄相思。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k10.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>六张机</mark></h5>
+									六张机，行行都是耍花儿。花间更有双蝴蝶，停梭一晌，闲窗影里，独自看多时。
+									六张机，行行都是耍花儿。花间更有双蝴蝶，停梭一晌，闲窗影里，独自看多时。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k11.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>七张机</mark></h5>
+									七张机，鸳鸯织就又迟疑。只恐被人轻裁剪，分飞两处，一场离恨，何计再相随？
+									七张机，鸳鸯织就又迟疑。只恐被人轻裁剪，分飞两处，一场离恨，何计再相随？
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k12.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>八张机</mark></h5>
+									八张机，回纹知是阿谁诗？织成一片凄凉意，行行读遍，恹恹无语，不忍更寻思。
+									八张机，回纹知是阿谁诗？织成一片凄凉意，行行读遍，恹恹无语，不忍更寻思。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="media">
+								<img src="../images/news/k14.ico" alt="" class="mr-3 align-self-center" width="64">
+								<div class="media-body">
+									<h5 class="mt-0"><mark>九张机</mark></h5>
+									九张机，双花双叶又双枝。薄情自古多离别，从头到尾，将心萦系，穿过一条丝。
+									九张机，双花双叶又双枝。薄情自古多离别，从头到尾，将心萦系，穿过一条丝。
+									<div class="list-group">
+										<a href="#" class="list-group-item align-self-end">
+											----By 某某某 ❤(10)
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+		
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="side-img mb-4">
+						<div class="carousel slide" data-ride="carousel" data-interval="2000" data-wrap="true" data-pause="hover">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="./images/model/corousel3.jpg"class="d-block w-100" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img src="./images/model/corousel2.jpg"class="d-block w-100" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img src="./images/model/corousel1.jpg"class="d-block w-100" alt="">
+								</div>
+								<div class="carousel-item">
+								  <img src="./images/model/corousel4.jpg"class="d-block w-100" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="side-card">
+						<div class="card mb-3">
+							<div class="card-header bg-info">云想衣裳花想容</div>
+							<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									<p>云想衣裳花想容，春风拂槛露华浓。若非群玉山头见，会向瑶台月下逢。</p>
+									<footer class="blockquote-footer">出自李白 <cite title="Source Title">《清平调》</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<div class="card-header bg-info">一枝秾艳露凝香</div>
+							<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									<p>一枝秾艳露凝香，云雨巫山枉断肠。借问汉宫谁得似，可怜飞燕倚新妆。</p>
+									<footer class="blockquote-footer">出自李白 <cite title="Source Title">《清平调》</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<div class="card-header bg-info">名花倾国两相欢</div>
+							<div class="card-body">
+								<blockquote class="blockquote mb-0">
+									<p>名花倾国两相欢，长得君王带笑看。沉香亭北倚阑干。</p>
+									<footer class="blockquote-footer">出自李白 <cite title="Source Title">《清平调》</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<div class="footer">
+			@版权
+		</div>
+		<script src="./js/model/jquery-3.4.1.min.js"></script>
+		<script src="./js/model/popper.min.js"></script>
+		<script src="./js/model/bootstrap.js"></script>
+	</body>
+</html>
